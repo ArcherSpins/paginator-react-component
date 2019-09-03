@@ -2,7 +2,6 @@
   "name": "paginator-react-component",
   "version": "0.1.0",
   "main": "lib/index.js",
-  "private": true,
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
