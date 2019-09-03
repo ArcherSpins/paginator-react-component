@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Paginate } from 'components/Paginate';
 import './App.css';
 
-function App() {
+const Component = ({name}) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>{name}</div>
+  );
+}
+
+const data = [{ name: 'Alex' }, { name: 'Joy' }];
+
+const App = () => {
+  return (
+    <Paginate
+      data={data}
+      Component={Component}
+      pageSize={2}
+      limit={1}
+    />
   );
 }
 
