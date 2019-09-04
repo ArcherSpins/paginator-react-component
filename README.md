@@ -6,7 +6,7 @@
 ## Usage
 ```
 import React from 'react';
-import { Paginate } from 'components/Paginate';
+import { Paginate } from 'paginator-react-component';
 import './App.css';
 
 const Component = ({name}) => {
