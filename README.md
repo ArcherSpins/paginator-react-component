@@ -1,27 +1,41 @@
-## Instalation
-`npm install --save paginator-react-component` or
-`yarn add paginator-react-component`
+# PaginatorComponent
 
+@@TODO: _badges_
+
+@@TODO: _description_
+
+## Instalation
+
+```sh
+$ npm install --save paginator-react-component
+```
+
+or
+
+```sh
+$ yarn add paginator-react-component
+```
 
 ## Usage
-```
-import React from 'react';
+
+```js
 import { Paginate } from 'paginator-react-component';
+
 import './App.css';
 
-const Component = ({name}) => {
+const Component = ({ name }) => {
   return (
     <div>{name}</div>
   );
-}
+};
 
 const data = [
   { name: 'JavaScript' },
+  { name: 'Python' },
   { name: 'Swift' },
+  { name: 'Java' },
   { name: 'PHP' },
   { name: 'C#' },
-  { name: 'Java' },
-  { name: 'Python' }
 ];
 
 const App = () => {
@@ -32,21 +46,15 @@ const App = () => {
       limit={3}
     />
   );
-}
+};
 
 export default App;
 ```
-## API
-### data
-the data array on which to draw components
 
-### Component
-component to be drawn
+## Properties
 
-### limit
-the limit of components in a single tab
-
-
-
-
-
+| Prop | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| `data` | `Object[]` | `[]` | the data array for render |
+| `Component` | `Component` | - | component to be drawn |
+| `limit` | `Number` | Infinity | the limit of components shown in a single tab |
