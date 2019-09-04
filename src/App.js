@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Paginate
       data={data}
-      Component={Component}
+      component={Component}
       limit={3}
     />
   );
