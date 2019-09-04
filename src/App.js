@@ -8,15 +8,14 @@ const Component = ({name}) => {
   );
 }
 
-const data = [{ name: 'Alex' }, { name: 'Joy' }];
+const data = [{ name: 'Alex' }, { name: 'Joy' }, { name: 'Joy 2' },{ name: 'Alex' }, { name: 'Joy' }, { name: 'Joy 3' }];
 
 const App = () => {
   return (
     <Paginate
       data={data}
       Component={Component}
-      pageSize={2}
-      limit={1}
+      limit={3}
     />
   );
 }
