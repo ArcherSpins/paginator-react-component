@@ -15,7 +15,14 @@ const Component = ({name}) => {
   );
 }
 
-const data = [{ name: 'Alex' }, { name: 'Joy' }, { name: 'Joy 2' },{ name: 'Alex' }, { name: 'Joy' }, { name: 'Joy 3' }];
+const data = [
+  { name: 'JavaScript' },
+  { name: 'Swift' },
+  { name: 'PHP' },
+  { name: 'C#' },
+  { name: 'Java' },
+  { name: 'Python' }
+];
 
 const App = () => {
   return (
