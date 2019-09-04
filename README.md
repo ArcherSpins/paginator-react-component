@@ -37,13 +37,13 @@ const App = () => {
 export default App;
 ```
 ## API
-# data
+### data
 the data array on which to draw components
 
-# Component
+### Component
 component to be drawn
 
-# limit
+### limit
 the limit of components in a single tab
 
 
