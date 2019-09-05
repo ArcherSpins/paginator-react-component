@@ -42,7 +42,7 @@ const App = () => {
   return (
     <Paginate
       data={data}
-      component={Component}
+      Component={Component}
       limit={3}
     />
   );
